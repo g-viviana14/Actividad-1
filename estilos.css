@@ -1,0 +1,93 @@
+
+
+
+ *{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+h1{
+	max-width: 200%;
+	height: 600px;
+	width: 1300px;
+}
+
+body{
+	font-family: 'Century Gothic';
+	background-color:rgb(95, 49, 85); /*color de fondo*/
+	
+}
+
+/*==========================================*/
+
+.navegacion{
+	width: 100%;
+	background: rgb(76, 15, 82); /*Barra general de menù*/
+
+	display: flex;
+	justify-content: center;
+}
+
+
+.menu li{
+	flex-basis: 0;
+	flex-grow: 1;
+	border-right: 1px solid #df066b; /* Lineas derechas de los cuadrados del menu*/
+	position: relative;
+}
+
+.menu .first-item{
+	border-left: 1px solid #df066b; /*Lineas izquierdas de los cuadrados del menu*/
+}
+
+
+
+.menu li a .text-item{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: rgb(221, 240, 235); /* letra de los menu*/
+	top: 0%;
+	position: absolute;
+	z-index: 10;
+
+	/*color de los cuadros*/
+
+	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
+
+.menu li a .down-item{
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	background: rgb(60, 11, 65); /*Color de los cuadrados del menu*/
+
+	
+}
