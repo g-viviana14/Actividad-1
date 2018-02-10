@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="C:/Users/Viviana/Documents/ITQ/Programaciòn web II/Sitio web/estilos3.css" media="screen" type="text/css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Galeria</title>
+
+    
+    </head>
+		<style>
+    
+      body {
+  font-size: 16px;
+  color: #200505;
+  background: rgb(79, 146, 95);
+  font-family: 'Raleway', arial, sans-serif;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 100;
+  position: relative;
+  margin: 0;
+  top: 10%;
+  left: 20%;
+  right: 10%;
+ 
+}
+
+#mainnav ul {
+  padding-left: 1em;
+  position: relative;
+  bottom: 0;
+  font-weight: 400;
+  z-index: 100;
+  min-width: 20em;
+}
+#mainnav li {
+  list-style: none;
+  margin: .5em 0 0;
+  font-size: 1.75em;
+}
+#mainnav li:hover span {
+  opacity: 1;
+  transition: 0.25s;
+}
+#mainnav li.invisible {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s;
+}
+#mainnav li.animate {
+  opacity: 0;
+  animation-duration: 0.25s;
+  animation-name: easeOutBounce;
+  animation-fill-mode: forwards;
+}
+#mainnav li.animate:nth-child(4) {
+  animation-delay: 0s;
+}
+#mainnav li.animate:nth-child(4) {
+  animation-delay: 0.15s;
+}
+#mainnav li.animate:nth-child(4) {
+  animation-delay: 0.3s;
+}
+#mainnav li.animate:nth-child(4) {
+  animation-delay: 0.45s;
+}
+#mainnav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#mainnav i {
+  border: 2px solid #ffffff;
+  padding: .5em;
+  border-radius: 50%;
+}
+#mainnav span {
+  color: rgb(89, 137, 165);
+  padding: .35em;
+  margin-left: .5em;
+  border-radius: .2em;
+  font-size: .75em;
+  transition: .3s;
+  background: #fff;
+  opacity: 0;
+  position: relative;
+}
+#mainnav span:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: -.4em;
+  top: 50%;
+  margin-top: -.5em;
+  border-style: solid;
+  border-width: .5em .5em .5em 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+</style>
+
+
+  <body>
+
+   
+
+     
+              <header>
+        
+                <nav id="mainnav" >
+                  <ul>
+                    <li><a href="index.html"><img src="casa.png" width="60" height="50"></i><span>Incio</span></a></li>
+                    <li><a href="paquetes.html"><img src="tienda.png" width="60" height="50"></i><span>Paquetes</span></a></li>
+                    <li><a href="galeria.html"><img src="photo.png" width="60" height="50"></i><span>Galeria</span></a></li>
+                    <li><a href="contacto.html"><img src="mensaje.png" width="60" height="50"></i><span>Contact</span></a></li>
+                    
+                  </ul>
+                </nav>
+              </header>
+
+              <h1>Galeria con algunas de nuestras fiestas</h1>
+
+
+							
+	<ul class="galeria">
+		<li><a href="#img1"><img src="imagen 6.jpg"></a></li>
+		<li><a href="#img2"><img src="imagen 12.jpg"></a></li>
+		<li><a href="#img3"><img src="imagen 14.jpeg"></a></li>
+		<li><a href="#img4"><img src="imagen11.jpeg"></a></li>
+	</ul>
+
+
+	<div class="modal" id="img1">
+		<h3>XV</h3>
+		<div class="imagen">
+			<a href="#img4">&#60;</a>
+			<a href="#img2"><img src="imagen 6.jpg"></a>
+			<a href="#img2">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img2">
+		<h3>GRADUACIONES</h3>
+		<div class="imagen">
+			<a href="#img1">&#60;</a>
+			<a href="#img3"><img src="imagen 12.jpg"></a>
+			<a href="#img3">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img3">
+		<h3>BODAS</h3>
+		<div class="imagen">
+			<a href="#img2">&#60;</a>
+			<a href="#img4"><img src="imagen 14.jpeg"></a>
+			<a href="#img4">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+	<div class="modal" id="img4">
+		<h3>FIESTAS</h3>
+		<div class="imagen">
+			<a href="#img3">&#60;</a>
+			<a href="#img1"><img src="imagen11.jpeg"></a>
+			<a href="#img1">></a>
+		</div>
+		<a class="cerrar" href="">X</a>
+	</div>
+	
+
+   
+  </body>
+
+</html>
